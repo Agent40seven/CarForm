@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Search cars by model</title>
+    <link th:href="@{/styleSheets/styles.css}" rel="stylesheet" />
+</head>
+<body>
+<div>
+    <form th:action="@{/search}" method="post">
+        <label for="color">Enter color:</label>
+        <input type="text" id="color" th:name="color">
+        <input type="submit" value="Search" />
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+body {
+  font-family: "comfortaa";
+  color: white;
+  background-image: url("../images/abstract-3840x2160-dark-geometry-4k-24193.jpg");
+  background-size: 150%;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 2px 1px rgb(82, 87, 88);
+}
+
+.carListBtn {
+  background-color: #620000;
+  color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 1rem;
+  font-size: 1rem;
+  transition: background-color 0.2s, color 0.2s, border-radius 0.2s;
+  cursor: pointer;
+  border-bottom: 2px solid #b0b0b0;
+  border-right: 2px solid #b0b0b0;
+  border-top: 2px solid #202020;
+  border-left: 2px solid #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.carListBtn:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.carListBtn:hover {
+  background-color: white;
+  color: #800000;
+  border-radius: 0.5rem;
+}
+
+.carListBtn:active {
+  border-top: 2px solid #b0b0b0;
+  border-left: 2px solid #b0b0b0;
+  border-bottom: 2px solid #202020;
+  border-right: 2px solid #202020;
+}
+
+form {
+  margin: 20px;
+  padding: 20px;
+  background-color: #333;
+  border: 2px solid white;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 2px solid #b0b0b0;
+  background-image: linear-gradient(to right, #333, #666);
+  color: white;
+  width: 250px;
+  height: 20px;
+  margin-left: 5px;
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #620000;
+  color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  transition: background-color 0.2s, color 0.2s, border-radius 0.2s;
+  cursor: pointer;
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover {
+  border-color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: #800000;
+  border-radius: 0.5rem;
+}
+
+.btnContainer {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.carForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.carImage {
+  width: 355px;
+  height: 100px;
+}
+
+/* Cars Table */
+
+.carTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.tableScroll {
+  overflow: auto;
+  height: 500px;
+}
+
+table {
+  background-color: #333;
+  border: 2px solid #b0b0b0;
+  width: 900px;
+  height: 1000px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th, td {
+  padding: 2rem;
+}
+
+th {
+  background-color: #000;
+  border: 2px solid #b0b0b0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+td {
+  border: 2px solid #b0b0b0;
+  text-align: center;
+}
+
+/* Search Result Table */
+
+.resultsTable {
+  width: 900px;
+  height: 500px !important;
+}

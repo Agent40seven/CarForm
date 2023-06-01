@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Search results</title>
+    <link th:href="@{/styleSheets/styles.css}" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Search results</h1>
+    <div class="carTable">
+      <div class="tableScroll">
+        <table class="resultsTable">
+          <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Color</th>
+            <th>Year</th>
+          </tr>
+          <tr th:each="car : ${cars}">
+            <td th:text="${car.brand}"></td>
+            <td th:text="${car.model}"></td>
+            <td th:text="${car.color}"></td>
+            <td th:text="${car.year}"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="btnContainer">
+        <a class="carListBtn" href="/">View Form</a>
+        <a class="carListBtn" href="/search">Search</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car Form</title>
+    <link th:href="@{/styleSheets/styles.css}" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Enter Car's Info</h1>
+    <div class="carForm">
+      <form th:action="@{/}" th:object="${car}" method="post">
+        <div class="form-group">
+          <label for="brand">Brand</label>
+          <input required id="brand" type="text" th:field="*{brand}" />
+        </div>
+        <div class="form-group">
+          <label for="model">Model</label>
+          <input required id="model" type="text" th:field="*{model}" />
+        </div>
+        <div class="form-group">
+          <label for="color">Color</label>
+          <input required id="color" type="text" th:field="*{color}" />
+        </div>
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input required id="year" type="number" th:field="*{year}" />
+        </div>
+        <div class="btnContainer">
+          <input type="submit" value="Submit" />
+          <a class="carListBtn" href="/cars">View Cars</a>
+          <a class="carListBtn" href="/search">Search</a>
+        </div>
+      </form>
+      <img class="carImage" th:src="@{/images/mashin.png}" />
+    </div>
+  </body>
+</html>
